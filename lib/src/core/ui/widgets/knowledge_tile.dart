@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fweb/src/core/domain/knowledge.dart';
 
 import '../color_outlet.dart';
@@ -13,40 +14,43 @@ class KnowledgeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double factor = maxWidth / 160;
+    print(knowledge.thumbPath);
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(7),
       decoration: BoxDecoration(
-        color: ColorOutlet.primary,
-        borderRadius: BorderRadius.circular(13),
-        boxShadow: const [
-          BoxShadow(
-            color: ColorOutlet.secondaryDark,
-            spreadRadius: 1,
-          ),
-        ],
+        color: ColorOutlet.secondaryDark,
+        borderRadius: BorderRadius.circular(7),
+        // boxShadow: const [
+        //   BoxShadow(
+        //     color: ColorOutlet.secondaryCard,
+        //     spreadRadius: 2,
+        //   ),
+        //],
       ),
-      child: Row(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SizedBox(
-            width: maxWidth * 0.45 / factor,
-            child: Image.asset(
-              'assets/${knowledge.thumbPath}',
-            ),
-          ),
           Flexible(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                knowledge.title,
-                style: TextStyle(
-                  fontFamily: 'Sansation',
-                  color: ColorOutlet.secondary,
-                  fontSize: maxWidth * 0.13 / factor,
-                ),
-              ),
+            // width: maxWidth * 0.70 / factor,
+            // height: maxWidth * 0.35 / factor,
+            child: SvgPicture.asset(
+              'python-270029.svg',
             ),
           ),
+          //const Spacer(),
+          // Flexible(
+          //   child: FittedBox(
+          //     fit: BoxFit.scaleDown,
+          //     child: Text(
+          //       knowledge.title,
+          //       style: TextStyle(
+          //         fontFamily: 'Sansation',
+          //         color: ColorOutlet.textColorLight,
+          //         fontSize: maxWidth * 0.09 / factor,
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

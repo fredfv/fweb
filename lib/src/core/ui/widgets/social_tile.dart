@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fweb/src/core/ui/color_outlet.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../domain/social.dart';
 
-class SocialsTile extends StatelessWidget {
+class SocialTile extends StatelessWidget {
   final Social social;
   final double maxWidth;
-  const SocialsTile({Key? key, required this.social, required this.maxWidth})
+  const SocialTile({Key? key, required this.social, required this.maxWidth})
       : super(key: key);
 
   Future<void> launchLink(String url, {bool isNewTab = true}) async {
@@ -20,10 +22,15 @@ class SocialsTile extends StatelessWidget {
   Widget build(BuildContext context) {
     double factor = maxWidth / 160;
     return InkWell(
-      child: SizedBox(
-        width: maxWidth * 0.45 / factor,
-        child: Image.asset(
-          'assets/${social.imagePath}',
+      child: Padding(
+        padding: const EdgeInsets.all(1.0),
+        child: SizedBox(
+          width: maxWidth * 0.04 / factor,
+          height: maxWidth * 0.04 / factor,
+          child: SvgPicture.asset(
+            social.imagePath,
+            color: ColorOutlet.secondary,
+          ),
         ),
       ),
       onTap: () {

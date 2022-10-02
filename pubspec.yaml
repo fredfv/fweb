@@ -39,6 +39,7 @@ dependencies:
   flutter_modular: ^5.0.3
   loading_animation_widget: ^1.2.0+3
   url_launcher: ^6.1.6
+  flutter_svg: ^1.1.5
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +73,8 @@ flutter:
           - asset: assets/fonts/Sansation_Regular.ttf
           - asset: assets/fonts/Sansation_Bold.ttf
             style: italic
+          - asset: assets/fonts/Sansation_Bold.ttf
+            weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

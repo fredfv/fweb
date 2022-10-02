@@ -11,13 +11,13 @@ class HomeController extends ChangeNotifier {
       socials: <Social>[
         Social(
             path: 'https://www.linkedin.com/in/frederico-vieira-73499b212',
-            imagePath: 'linkedin.png'),
-        Social(path: 'https://github.com/fredfv', imagePath: 'github.png'),
-        Social(path: 'mailto:frederico.fv07@gmail.com', imagePath: 'email.png'),
+            imagePath: 'linkedin.svg'),
+        Social(path: 'https://github.com/fredfv', imagePath: 'github.svg'),
+        Social(path: 'mailto:frederico.fv07@gmail.com', imagePath: 'email.svg'),
         Social(
             path:
                 'https://play.google.com/store/apps/developer?id=FredGameDev&hl=pt_BR&gl=US',
-            imagePath: 'playstore.png')
+            imagePath: 'playstore.svg')
       ],
       knowledges: <Knowledge>[
         Knowledge(title: 'C Sharp', thumbPath: 'c-sharp-c-270702.png'),
