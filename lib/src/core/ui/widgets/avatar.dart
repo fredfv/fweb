@@ -12,7 +12,7 @@ class Avatar extends StatelessWidget {
       height: maxWidth * 0.3 / factor,
       decoration: BoxDecoration(
           //color: Colors.blue,
-          image: const DecorationImage(image: AssetImage('assets/eu.jpeg')),
+          image: const DecorationImage(image: AssetImage('assets/fredzin.png')),
           //border: Border.all(width: 8),
           borderRadius: BorderRadius.circular(2)),
     );

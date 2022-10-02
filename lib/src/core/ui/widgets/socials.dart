@@ -17,20 +17,5 @@ class Socials extends StatelessWidget {
         children: person.socials
             .map((e) => SocialTile(social: e, maxWidth: maxWidth))
             .toList());
-    // return GridView.builder(
-    //   itemCount: person.socials.length,
-    //   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-    //     maxCrossAxisExtent: 40,
-    //     mainAxisExtent: 40,
-    //     crossAxisSpacing: 5,
-    //     mainAxisSpacing: 5,
-    //   ),
-    //   itemBuilder: (context, index) {
-    //     return SocialTile(
-    //       social: person.socials[index],
-    //       maxWidth: maxWidth,
-    //     );
-    //   },
-    // );
   }
 }

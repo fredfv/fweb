@@ -37,7 +37,7 @@ class Badge extends StatelessWidget {
                 Text(
                   'Fred',
                   style: TextStyle(
-                      color: ColorOutlet.error,
+                      color: ColorOutlet.accent,
                       fontWeight: FontWeight.bold,
                       fontSize: maxWidth * 0.02 / factor),
                 ),
@@ -48,15 +48,15 @@ class Badge extends StatelessWidget {
               "I'm a mobile and backend programmer, lover of code.",
               style: TextStyle(
                   fontStyle: FontStyle.italic,
-                  color: ColorOutlet.secondary,
-                  fontSize: maxWidth * 0.015 / factor),
+                  color: ColorOutlet.text,
+                  fontSize: maxWidth * 0.013 / factor),
             ),
             Text(
               "In constantly learning...",
               style: TextStyle(
                   fontStyle: FontStyle.italic,
-                  color: ColorOutlet.secondary,
-                  fontSize: maxWidth * 0.015 / factor),
+                  color: ColorOutlet.text,
+                  fontSize: maxWidth * 0.013 / factor),
             ),
             SizedBox(height: maxWidth * 0.04 / factor),
             FittedBox(

@@ -16,36 +16,16 @@ class HomePage extends StatelessWidget {
               return GridView.count(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 50, vertical: 50),
-                  crossAxisCount: constraints.maxWidth > 500 ? 2 : 1,
+                  crossAxisCount: constraints.maxWidth > 800 ? 2 : 1,
                   children: [
                     Badge(
                       maxWidth: constraints.maxWidth,
                       person: controller.person,
                     ),
                     Padding(
-                        padding: EdgeInsets.all(constraints.maxWidth * 0.07),
-                        child: Image.asset('assets/knowledges.png')),
-                  ]
-                  // [
-                  //   if (constraints.maxWidth > 500) ...[
-                  //     Padding(
-                  //         padding: const EdgeInsets.all(20.0),
-                  //         child: Image.asset('assets/knowledges.png')),
-                  //     Badge(
-                  //       maxWidth: constraints.maxWidth,
-                  //       person: controller.person,
-                  //     ),
-                  //   ] else ...[
-                  //     Badge(
-                  //       maxWidth: constraints.maxWidth,
-                  //       person: controller.person,
-                  //     ),
-                  //     Padding(
-                  //         padding: const EdgeInsets.all(10.0),
-                  //         child: Image.asset('assets/knowledges.png')),
-                  //   ]
-                  // ],
-                  );
+                        padding: EdgeInsets.all(constraints.maxWidth * 0.06),
+                        child: Image.asset('assets/knowledgesnew.png')),
+                  ]);
             },
           ),
         ));
