@@ -12,8 +12,8 @@ class HomeController extends ChangeNotifier {
         Social(
             path: 'https://www.linkedin.com/in/frederico-vieira-73499b212',
             imagePath: 'linkedin.png'),
-        Social(path: 'github.com/fredfv', imagePath: 'github.png'),
-        Social(path: 'frederico.fv07@gmail.com', imagePath: 'email.png'),
+        Social(path: 'https://github.com/fredfv', imagePath: 'github.png'),
+        Social(path: 'mailto:frederico.fv07@gmail.com', imagePath: 'email.png'),
         Social(
             path:
                 'https://play.google.com/store/apps/developer?id=FredGameDev&hl=pt_BR&gl=US',
