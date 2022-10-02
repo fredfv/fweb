@@ -28,7 +28,7 @@ class SocialTile extends StatelessWidget {
           width: maxWidth * 0.04 / factor,
           height: maxWidth * 0.04 / factor,
           child: SvgPicture.asset(
-            social.imagePath,
+            'assets/${social.imagePath}',
             color: ColorOutlet.secondary,
           ),
         ),
