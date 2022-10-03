@@ -30,7 +30,7 @@ class Badge extends StatelessWidget {
                 textBaseline: TextBaseline.alphabetic,
                 children: const [
                   Text(
-                    'Hello! I am',
+                    "Hello! I'am",
                     style: TextStyle(
                       color: ColorOutlet.secondary,
                       fontSize: 12,
