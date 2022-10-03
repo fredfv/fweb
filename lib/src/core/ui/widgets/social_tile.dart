@@ -23,10 +23,10 @@ class SocialTile extends StatelessWidget {
     double factor = maxWidth / 160;
     return InkWell(
       child: Padding(
-        padding: const EdgeInsets.all(1.0),
+        padding: const EdgeInsets.all(7),
         child: SizedBox(
-          width: maxWidth * 0.04 / factor,
-          height: maxWidth * 0.04 / factor,
+          width: maxWidth * 0.1 / factor,
+          height: maxWidth * 0.1 / factor,
           child: SvgPicture.asset(
             'assets/${social.imagePath}',
             color: ColorOutlet.secondary,

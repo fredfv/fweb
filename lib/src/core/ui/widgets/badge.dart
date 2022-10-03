@@ -17,54 +17,68 @@ class Badge extends StatelessWidget {
     return FittedBox(
       alignment: Alignment.center,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20),
+        padding: const EdgeInsets.symmetric(vertical: 2.7),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Avatar(
               maxWidth: maxWidth,
             ),
-            SizedBox(height: maxWidth * 0.04 / factor),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  'Hello! I am',
-                  style: TextStyle(
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.baseline,
+                textBaseline: TextBaseline.alphabetic,
+                children: const [
+                  Text(
+                    'Hello! I am',
+                    style: TextStyle(
                       color: ColorOutlet.secondary,
-                      fontSize: maxWidth * 0.015 / factor),
-                ),
-                Text(
-                  'Fred',
-                  style: TextStyle(
+                      fontSize: 10,
+                    ),
+                  ),
+                  Text(
+                    ' Fred',
+                    style: TextStyle(
                       color: ColorOutlet.accent,
                       fontWeight: FontWeight.bold,
-                      fontSize: maxWidth * 0.02 / factor),
-                ),
-              ],
+                      fontSize: 14,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            SizedBox(height: maxWidth * 0.01 / factor),
-            Text(
-              "I'm a mobile and backend programmer, lover of code.",
-              style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  color: ColorOutlet.text,
-                  fontSize: maxWidth * 0.013 / factor),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: const [
+                  Text(
+                    "I'm a mobile and backend programmer, lover of code.",
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        color: ColorOutlet.text,
+                        fontSize: 7),
+                  ),
+                  Text(
+                    "In constantly learning...",
+                    style: TextStyle(
+                      fontStyle: FontStyle.italic,
+                      color: ColorOutlet.text,
+                      fontSize: 7,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Text(
-              "In constantly learning...",
-              style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  color: ColorOutlet.text,
-                  fontSize: maxWidth * 0.013 / factor),
-            ),
-            SizedBox(height: maxWidth * 0.04 / factor),
-            FittedBox(
-              child: SizedBox(
-                child: IntrinsicWidth(
-                  child: Socials(
-                    maxWidth: maxWidth,
-                    person: person,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FittedBox(
+                child: SizedBox(
+                  child: IntrinsicWidth(
+                    child: Socials(
+                      maxWidth: maxWidth,
+                      person: person,
+                    ),
                   ),
                 ),
               ),

@@ -8,18 +8,11 @@ class Avatar extends StatelessWidget {
   Widget build(BuildContext context) {
     var factor = maxWidth / 160;
     return Container(
-      width: maxWidth * 0.3 / factor,
-      height: maxWidth * 0.3 / factor,
+      width: maxWidth * 0.75 / factor,
+      height: maxWidth * 0.75 / factor,
       decoration: BoxDecoration(
-          //color: Colors.blue,
           image: const DecorationImage(image: AssetImage('assets/fredzin.png')),
-          //border: Border.all(width: 8),
-          borderRadius: BorderRadius.circular(2)),
+          borderRadius: BorderRadius.circular(30)),
     );
-
-    // return CircleAvatar(
-    //   radius: maxWidth * 0.04,
-    //   backgroundImage: const AssetImage('assets/eu.jpeg'),
-    // );
   }
 }

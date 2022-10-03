@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
                       person: controller.person,
                     ),
                     Padding(
-                        padding: EdgeInsets.all(constraints.maxWidth * 0.06),
+                        padding: EdgeInsets.all(constraints.maxWidth * 0.04),
                         child: Image.asset('assets/knowledgesnew.png')),
                   ]);
             },
