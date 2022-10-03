@@ -14,8 +14,9 @@ class HomePage extends StatelessWidget {
           child: LayoutBuilder(
             builder: (context, constraints) {
               return GridView.count(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: constraints.maxWidth > 800 ? 50 : 2,
+                      vertical: constraints.maxWidth > 800 ? 25 : 10),
                   crossAxisCount: constraints.maxWidth > 800 ? 2 : 1,
                   children: [
                     Badge(

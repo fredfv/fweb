@@ -13,11 +13,10 @@ class Badge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var factor = maxWidth / 160;
     return FittedBox(
       alignment: Alignment.center,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 2.7),
+        padding: const EdgeInsets.symmetric(vertical: 2),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -34,7 +33,7 @@ class Badge extends StatelessWidget {
                     'Hello! I am',
                     style: TextStyle(
                       color: ColorOutlet.secondary,
-                      fontSize: 10,
+                      fontSize: 12,
                     ),
                   ),
                   Text(
@@ -42,7 +41,7 @@ class Badge extends StatelessWidget {
                     style: TextStyle(
                       color: ColorOutlet.accent,
                       fontWeight: FontWeight.bold,
-                      fontSize: 14,
+                      fontSize: 16,
                     ),
                   ),
                 ],
@@ -57,14 +56,14 @@ class Badge extends StatelessWidget {
                     style: TextStyle(
                         fontStyle: FontStyle.italic,
                         color: ColorOutlet.text,
-                        fontSize: 7),
+                        fontSize: 9),
                   ),
                   Text(
                     "In constantly learning...",
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                       color: ColorOutlet.text,
-                      fontSize: 7,
+                      fontSize: 9,
                     ),
                   ),
                 ],
